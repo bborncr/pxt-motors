@@ -1,16 +1,16 @@
 {
-    name: "motors",
-    version: "0.0.1",
-    description: "A simple motor driver",
-    license: "MIT",
-    dependencies: {
-    core: "*"
+    "name": "motors",
+    "version": "0.0.1",
+    "description": "A simple motor driver",
+    "license": "MIT",
+    "dependencies": {
+    "core": "*"
     },
-    files: [
+    "files": [
     "README.md",
     "motors.ts"
     ],
-    testFiles: [
+    "testFiles": [
     "test.ts"
     ],
     "public": true
