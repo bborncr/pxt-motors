@@ -4,6 +4,7 @@
  * The most important macro "block" specifies that a
  * block should be generated for a **exported** function.
  */
+//% color=#2699BF icon="\uf5de"
 namespace motors {
 
     //% block
