@@ -36,7 +36,7 @@ namespace motors {
     //% blockId="motor_create" block="Create motor on speed pin %spdPin|and direction pin %dirPin"
     //% parts="motor"
     //% blockSetVariable=motor
-    export function create(spdPin: AnalogPin = 255, dirPin: DigitalPin): Motor {
+    export function create(spdPin: AnalogPin, dirPin: DigitalPin): Motor {
         let motor = new Motor();
         motor.setDirPin(dirPin);
         motor.setSpdPin(spdPin);
@@ -50,10 +50,9 @@ namespace motors {
     //% blockId="motor_forward" block="Set motor speed to %speed"
     //% parts="motor"
     //% blockSetVariable=motor
-    export function forward(speed: number): Motor {
+    export function forward(speed: number = 255): void {
         this.motor.digitalWrite(this.dirPin, 1);
         this.motor.analogWrite(this.spdPin, this.speed);
-        return motor;
     }
  
 }
