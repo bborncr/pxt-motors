@@ -30,7 +30,7 @@ namespace motors {
          * Set the speed of the motor
          * @param speed is the speed of the motor
          */
-        //% blockId="motor_forward" block="%motor|set speed %speed"
+        //% blockId="motor_forward" block="%motor|forward %speed"
         //% parts="motors"
         forward(speed: number): void {
             this.speed = speed;
