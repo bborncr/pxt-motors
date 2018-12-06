@@ -5,7 +5,7 @@
  * block should be generated for a **exported** function.
  */
 //% color="#AA278D"
-namespace basic {
+namespace pins {
 
     //% block
     export function helloWorld() {
