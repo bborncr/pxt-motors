@@ -1,0 +1,22 @@
+{
+    name: "motors",
+    version: "0.0.1",
+    description: "A simple motor driver",
+    license: "MIT",
+    dependencies: {
+    core: "*"
+    },
+    files: [
+    "README.md",
+    "motors.ts"
+    ],
+    testFiles: [
+    "test.ts"
+    ],
+    public: true,
+    extension: {
+    namespace: "motors",
+    label: "Motors",
+    localUrl: "http://127.0.0.1:8080/index.html?d"
+    }
+    }
