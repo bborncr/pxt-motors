@@ -32,6 +32,7 @@ namespace motors {
          */
         //% blockId="motor_forward" block="Set motor speed to %speed"
         //% parts="motor"
+        //% blockSetVariable=motor
         forward(speed: number = 1023): void {
             this.analogWrite(this.spdPin, this.speed);
             this.digitalWrite(this.dirPin, 1);
