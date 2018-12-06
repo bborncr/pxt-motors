@@ -4,19 +4,16 @@
  * The most important macro "block" specifies that a
  * block should be generated for a **exported** function.
  */
-//% color=190 icon="\uf1ec" block="Basic Blocks"
+//% color=190 icon="\uf5de" block="Motors"
 namespace motors {
 
     //% block
-    export function helloWorld() {
+    export function forward() {
 
     }
 
-    // note that Caml casing yields lower case
-    // block text with spaces
-
     //% block
-    export function camlCaseTwo() {
+    export function reverse() {
 
     }
 }
