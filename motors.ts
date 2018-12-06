@@ -32,10 +32,9 @@ namespace motors {
      * @param spdPin is the speed pin
      * @param dirPin is the direction pin
      */
-    //% blockId="motor_create" block="Define motor on speed pin %spdPin|and direction pin %dirPin"
+    //% blockId="motor_create" block="Create motor on speed pin %spdPin|and direction pin %dirPin"
     //% weight=90 blockGap=8
     //% parts="motor"
-    //% trackArgs=0,1
     //% blockSetVariable=motor1
     export function create(dirPin: DigitalPin, spdPin: DigitalPin): Motor {
         let motor = new Motor();
