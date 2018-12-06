@@ -50,9 +50,10 @@ namespace motors {
     //% blockId="motor_forward" block="Set motor speed to %speed"
     //% parts="motor"
     //% blockSetVariable=motor
-    export function forward(speed: number = 255): void {
+    export function forward(speed: number = 255): Motor {
         this.motor.digitalWrite(this.dirPin, 1);
         this.motor.analogWrite(this.spdPin, this.speed);
+        return motor;
     }
  
 }
