@@ -12,7 +12,7 @@ namespace motors {
         //% parts="motors"
         setDirPin(dirPin: DigitalPin): void {
             this.dirPin = dirPin;
-            pins.digitalWritePin(this.dirPin, 0);
+            pins.digitalWritePin(this.dirPin, 1);
             // don't yield to avoid races on initialization
         }
 
