@@ -26,6 +26,18 @@ namespace motors {
             // don't yield to avoid races on initialization
         }
 
+         /**
+         * Set motor to forward
+         * @param speed is the motor speed
+         */
+        //% blockId="motor_forward" block="Set motor speed to %speed"
+        //% parts="motor"
+        forward(speed: number = 1023): void {
+            this.analogWrite(this.spdPin, this.speed);
+            this.digitalWrite(this.dirPin, 1);
+        }
+
+
     }
 
     /**
@@ -40,19 +52,6 @@ namespace motors {
         let motor = new Motor();
         motor.setDirPin(dirPin);
         motor.setSpdPin(spdPin);
-        return motor;
-    }
-
-     /**
-     * Set motor to forward
-     * @param speed is the speed
-     */
-    //% blockId="motor_forward" block="Set motor speed to %speed"
-    //% parts="motor"
-    //% blockSetVariable=motor
-    export function forward(speed: number = 255): Motor {
-        this.motor.digitalWrite(this.dirPin, 1);
-        this.motor.analogWrite(this.spdPin, this.speed);
         return motor;
     }
  
