@@ -26,15 +26,15 @@ namespace motors {
             // don't yield to avoid races on initialization
         }
 
-        // /**
-        //  * Set the speed of the motor
-        //  * @param speed is the speed of the motor
-        //  */
-        // //% blockId="motor_forward" block="%motor|forward %speed"
-        // //% parts="motors"
-        // forward(speed: number): void {
-        //     this.speed = speed;
-        // }
+        /**
+         * Set the speed of the motor
+         * @param speed is the speed of the motor
+         */
+        //% blockId="motor_forward" block="%motor|forward %speed"
+        //% parts="motors"
+        forward(speed: number): void {
+            this.speed = speed;
+        }
 
     }
 
