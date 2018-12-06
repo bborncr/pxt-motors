@@ -1,7 +1,5 @@
 //% color=190 icon="\uf1b9" block="Motors"
-namespace motors {
-
-    export class motors {
+ {
         spdPin: AnalogPin;
         dirPin: DigitalPin;
         speed: number;
@@ -31,7 +29,7 @@ namespace motors {
          * @param speed is the speed of the motor
          */
         //% blockId="motor_forward" block="%motor|set speed %speed"
-        //% parts="motor"
+        //% parts="motors"
         forward(speed: number): void {
             this.speed = speed;
         }
