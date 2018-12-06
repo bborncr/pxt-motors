@@ -34,8 +34,6 @@ namespace motors {
         //% parts="motor"
         forward(speed: number): void {
             this.speed = speed;
-            digitalWrite(this.dirPin, 1);
-            analogWrite(this.spdPin, this.speed);
         }
 
     }
