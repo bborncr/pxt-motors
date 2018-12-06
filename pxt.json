@@ -13,10 +13,5 @@
     testFiles: [
     "test.ts"
     ],
-    public: true,
-    extension: {
-    namespace: "motors",
-    label: "Motors",
-    localUrl: "http://127.0.0.1:8080/index.html?d"
-    }
-    }
+    "public": true
+}
