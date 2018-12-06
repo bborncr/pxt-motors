@@ -1,7 +1,7 @@
 //% color=190 icon="\uf1b9" block="Motors"
 namespace motors {
 
-    export class motors {
+    export class Motor {
         spdPin: AnalogPin;
         dirPin: DigitalPin;
         speed: number;
