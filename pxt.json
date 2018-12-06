@@ -10,8 +10,5 @@
     "README.md",
     "motors.ts"
     ],
-    "testFiles": [
-    "test.ts"
-    ],
     "public": false
 }
