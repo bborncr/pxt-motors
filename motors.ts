@@ -34,10 +34,9 @@ namespace motors {
      * @param dirPin is the direction pin
      */
     //% blockId="motor_create" block="Create motor on speed pin %spdPin|and direction pin %dirPin"
-    //% weight=90 blockGap=8
     //% parts="motor"
     //% blockSetVariable=motor
-    export function create(dirPin: DigitalPin, spdPin: AnalogPin): Motor {
+    export function create(spdPin: AnalogPin = 255, dirPin: DigitalPin): Motor {
         let motor = new Motor();
         motor.setDirPin(dirPin);
         motor.setSpdPin(spdPin);
@@ -48,7 +47,7 @@ namespace motors {
      * Set motor to forward
      * @param speed is the speed
      */
-    //% blockId="motor_forward" block="Set motor speed to %speed|255"
+    //% blockId="motor_forward" block="Set motor speed to %speed"
     //% parts="motor"
     //% blockSetVariable=motor
     export function forward(speed: number): Motor {
