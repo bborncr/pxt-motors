@@ -10,9 +10,5 @@
     "README.md",
     "motors.ts"
     ],
-    "public": true,
-    "extension": {
-        "namespace": "motors",
-        "label": "Motor Driver",
-        "localUrl": "http:127.0.0.1:8080/index.html?d"
+    "public": true
 }
