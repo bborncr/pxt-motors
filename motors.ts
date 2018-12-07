@@ -1,6 +1,7 @@
 //% color=190 icon="\uf1b9" block="Motors"
 namespace motors {
    /**
+   * L9110 Dual Motor Driver
    * @param IAPin 
    * @param IBPin 
    * @param speed Choose motor speed (-100 to 100)
