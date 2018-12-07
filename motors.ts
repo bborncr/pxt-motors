@@ -9,7 +9,7 @@ namespace motors {
    //% speed.shadow="speedPicker"
    //% blockGap=8
    export function move(dirPin: DigitalPin, spdPin: AnalogOutPin, speed: number): void {
-      if(speed > 0){
+      if(speed >= 0){
          dirPin.digitalWrite(true);
          spdPin.analogWrite((speed / 100) * 1023);
       } else if (speed < 0){
