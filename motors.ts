@@ -1,20 +1,20 @@
 //% color=190 icon="\uf1b9" block="Motors"
 namespace motors {
    /**
-   * @param dirPin Choose direction pin
-   * @param spdPin Choose speed pin
-   * @param speed Choose motor speed (0-1023)
+   * @param IAPin 
+   * @param IBPin 
+   * @param speed Choose motor speed (-100 to 100)
    */
-   //% block="Motor direction pin %dirPin|speed pin %spdPin| Choose speed %speed"
+   //% block="Driver IA pin %IAPin| IB pin %IBPin| Choose speed %speed"
    //% speed.shadow="speedPicker"
    //% blockGap=8
-   export function move(dirPin: DigitalPin, spdPin: AnalogOutPin, speed: number): void {
+   export function move(IAPin: AnalogOutPin, IBPin: AnalogOutPin, speed: number): void {
       if(speed >= 0){
-         dirPin.digitalWrite(true);
-         spdPin.analogWrite(1023 - ((speed / 100) * 1023));
+         IAPin.analogWriteWrite((speed / 100) * 1023);
+         IBPin.analogWrite(0);
       } else if (speed < 0){
-         dirPin.digitalWrite(false);
-         spdPin.analogWrite(Math.abs((speed / 100) * 1023));
+         IAPin.analogWrite(0);
+         IBPin.analogWrite(Math.abs((speed / 100) * 1023));
       }
    }
 }
