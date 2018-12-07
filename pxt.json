@@ -10,5 +10,8 @@
     "README.md",
     "motors.ts"
     ],
-    "public": true
+    "public": true,
+    "extension": {
+        "namespace": "motors",
+        "label": "Motor Driver"
 }
