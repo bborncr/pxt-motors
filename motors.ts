@@ -1,11 +1,11 @@
 //% color=190 icon="\uf1b9" block="Motors"
 namespace motors {
    /**
-   * @param pin
+   * @param pin Choose pin number
    */
    //% block="Motor forward pin %pin"
    //% blockGap=8
-   export function forward(pin: DigitalPin): void {
+   export function forward(pin: number): void {
        pins.A2.digitalWrite(true);
    }
 }
