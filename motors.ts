@@ -5,7 +5,7 @@ namespace motors {
    */
    //% block="Motor forward pin %pin"
    //% blockGap=8
-   export function forward(pin: number): void {
+   export function forward(pin: DigitalPin): void {
        pins.A2.digitalWrite(true);
    }
 }
