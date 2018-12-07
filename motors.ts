@@ -2,7 +2,7 @@
 namespace motors {
    /**
    * @param pin
-   /*
+   */
    //% block="Motor forward pin %pin"
    //% blockGap=8
    export function forward(pin: DigitalPin): void {
