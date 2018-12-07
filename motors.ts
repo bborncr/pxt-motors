@@ -10,7 +10,7 @@ namespace motors {
    //% blockGap=8
    export function move(IAPin: AnalogOutPin, IBPin: AnalogOutPin, speed: number): void {
       if(speed >= 0){
-         IAPin.analogWriteWrite((speed / 100) * 1023);
+         IAPin.analogWrite((speed / 100) * 1023);
          IBPin.analogWrite(0);
       } else if (speed < 0){
          IAPin.analogWrite(0);
