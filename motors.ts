@@ -9,7 +9,6 @@ namespace motors {
         /**
          * Set the directional pin where the motor is connected, defaults to P0.
          */
-        //% parts="motors"
         setDirPin(dirPin: DigitalOutPin): void {
             this.dirPin = dirPin;
             pins.DigitalWritePin(this.dirPin, 0);
@@ -19,7 +18,6 @@ namespace motors {
         /**
          * Set the speed pin where the motor is connected, defaults to P0.
          */
-        //% parts="motors"
         setSpdPin(spdPin: AnalogOutPin): void {
             this.spdPin = spdPin;
             pins.AnalogWritePin(this.spdPin, 0);
@@ -31,7 +29,6 @@ namespace motors {
          * @param speed is the speed of the motor
          */
         //% blockId="motor_forward" block="%motor|forward %speed"
-        //% parts="motors"
         forward(speed: number): void {
             this.speed = speed;
         }
@@ -44,7 +41,6 @@ namespace motors {
      * @param dirPin is the direction pin
      */
     //% blockId="motor_create" block="Create motor on speed pin %spdPin|and direction pin %dirPin"
-    //% parts="motors"
     //% blockSetVariable=motor
     export function create(spdPin: AnalogOutPin, dirPin: DigitalOutPin): Motor {
         let motor = new Motor();
