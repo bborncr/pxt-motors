@@ -5,7 +5,7 @@ namespace motors {
    * @param spdPin Choose speed pin
    * @param speed Choose motor speed (0-1023)
    */
-   //% block="Motor direction pin %dirPin|speed pin %spdPin| Chose speed %speed"
+   //% block="Motor direction pin %dirPin|speed pin %spdPin| Choose speed %speed"
    //% speed.shadow="speedPicker"
    //% blockGap=8
    export function move(dirPin: DigitalPin, spdPin: AnalogOutPin, speed: number): void {
