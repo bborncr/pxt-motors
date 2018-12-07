@@ -11,10 +11,10 @@ namespace motors {
    export function move(dirPin: DigitalPin, spdPin: AnalogOutPin, speed: number): void {
       if(speed > 0){
          dirPin.digitalWrite(true);
-         spdPin.analogWrite(speed);
+         spdPin.analogWrite((speed / 100) * 1023);
       } else if (speed < 0){
          dirPin.digitalWrite(false);
-         spdPin.analogWrite(1023 - Math.abs(speed));
+         spdPin.analogWrite(1023 - Math.abs((speed / 100) * 1023));
       }
    }
 }
