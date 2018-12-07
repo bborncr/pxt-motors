@@ -6,6 +6,6 @@ namespace motors {
    //% block="Motor forward"
    //% blockGap=8
    export function forward(pin: DigitalPin): void {
-       pin.digitalWrite(true);
+       pins.pin.digitalWrite(true);
    }
 }
