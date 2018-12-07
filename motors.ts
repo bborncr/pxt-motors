@@ -3,15 +3,15 @@ namespace motors {
 
     export class Motor {
         spdPin: AnalogOutPin;
-        dirPin: DigitalInOutPin;
+        dirPin: DigitalPin;
         speed: number;
 
         /**
          * Set the directional pin where the motor is connected, defaults to P0.
          */
-        setDirPin(dirPin: DigitalInOutPin): void {
+        setDirPin(dirPin: DigitalPin): void {
             this.dirPin = dirPin;
-            pins.DigitalWritePin(this.dirPin, 0);
+            pins.digitalWritePin(this.dirPin, 0);
             // don't yield to avoid races on initialization
         }
 
@@ -42,7 +42,7 @@ namespace motors {
      */
     //% blockId="motor_create" block="Create motor on speed pin %spdPin|and direction pin %dirPin"
     //% blockSetVariable=motor
-    export function create(spdPin: AnalogOutPin, dirPin: DigitalInOutPin): Motor {
+    export function create(spdPin: AnalogOutPin, dirPin: DigitalPin): Motor {
         let motor = new Motor();
         motor.setDirPin(dirPin);
         motor.setSpdPin(spdPin);
