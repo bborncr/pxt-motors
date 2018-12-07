@@ -1,6 +1,6 @@
 //% color=190 icon="\uf1b9" block="Motors"
 namespace motors {
-   //**
+   /**
    * @param pin
    /*
    //% block="Motor forward pin %pin"
